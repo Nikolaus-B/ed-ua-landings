@@ -7,6 +7,39 @@
     <title>Teacher ED UA</title>
   </head>
   <body>
-    <h1>hello world</h1>
+    <header><div>Header</div></header>
+    <main id="content"></main>
+    <footer><div>Footer</div></footer>
   </body>
+
+  <script>
+    function loadPage(page) {
+      const contentDiv = document.getElementById("content");
+      fetch(`src/pages/${page}.html`)
+        .then((response) => response.text())
+        .then((html) => {
+          contentDiv.innerHTML = html;
+        })
+        .catch((error) => {
+          console.error("Error loading page:", error);
+        });
+    }
+
+    function handleUrlChange() {
+      const path = window.location.pathname;
+      if (path === "/teacher") {
+        loadPage("teacher");
+      } else if (path === "/student") {
+        loadPage("student");
+      } else if (path === "/specialist") {
+        loadPage("specialist");
+      } else {
+        loadPage("not-found");
+      }
+    }
+
+    handleUrlChange();
+
+    window.addEventListener("popstate", handleUrlChange);
+  </script>
 </html>
