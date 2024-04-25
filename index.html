@@ -5,11 +5,185 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Teacher ED UA</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/css/styles.css" />
   </head>
   <body>
-    <header><div>Header</div></header>
+    <header class="header">
+      <div class="header-img-container">
+        <img class="header-img-flag" src="./flag-left.png" alt="flag-left" />
+        <img class="header-img-emblem" src="./emblem.png" alt="emblem" />
+        <img class="header-img-flag" src="./flag-right.png" alt="flag-right" />
+      </div>
+      <nav class="header-nav">
+        <a
+          href="https://it-certification.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg class="header-logo" width="49" height="60">
+            <use href="./sprite.svg#logo"></use>
+          </svg>
+        </a>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="" class="nav-link">Головна</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Про платформу</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Можливості</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Як працює</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Що отримаєте</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Відгуки</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
     <main id="content"></main>
-    <footer><div>Footer</div></footer>
+    <footer class="footer">
+      <div class="footer-container">
+        <a
+          href="https://it-certification.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg class="footer-logo" width="49" height="90">
+            <use href="./sprite.svg#logo"></use>
+          </svg>
+        </a>
+        <!-- <div class="footer-link-container"> -->
+        <ul class="footer-link-list">
+          <li class="footer-link-item">
+            <a href="" class="footer-link">
+              <img src="./instagram-icon.png" alt="instagram icon" />
+            </a>
+          </li>
+          <li class="footer-link-item">
+            <a href="" class="footer-link">
+              <svg class="footer-social" width="32" height="32">
+                <use href="./sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-link-item">
+            <a href="" class="footer-link">
+              <svg class="footer-social" width="32" height="32">
+                <use href="./sprite.svg#viber"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-link-item">
+            <a href="" class="footer-link">
+              <svg class="footer-social" width="32" height="32">
+                <use href="./sprite.svg#telegram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-link-item">
+            <a href="" class="footer-link">
+              <svg class="footer-social" width="32" height="32">
+                <use href="./sprite.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-link-item">
+            <a href="" class="footer-link">
+              <svg class="footer-social" width="32" height="32">
+                <use href="./sprite.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <!-- </div> -->
+        <div class="footer-info-wrap">
+          <div class="footer-main-info-wrap">
+            <div class="footer-main-info-container">
+              <p class="footer-text">Офіційний веб-сайт</p>
+              <a
+                href="https://it-certification.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer-main-info-link"
+                >Education UA
+              </a>
+            </div>
+            <div class="footer-main-info-container">
+              <p class="footer-text">Права на всі матеріали належать</p>
+              <a
+                href="https://it-certification.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer-main-info-link"
+                >Education UA
+              </a>
+            </div>
+            <div class="footer-main-info-container">
+              <svg class="header-logo" width="24" height="24">
+                <use href="./sprite.svg#copyright"></use>
+              </svg>
+              <a
+                href="https://it-certification.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer-main-info-link"
+                >Education UA
+              </a>
+              <p>2024</p>
+              <p>Всі права захищені</p>
+            </div>
+          </div>
+
+          <ul class="footer-contacts-list">
+            <li class="footer-contacts-item">
+              <p class="footer-contacts-text">Гаряча лінія</p>
+              <a href="tel:0 (800) 000 000" class="footer-contacts-link"
+                >0 (800) 000 000</a
+              >
+            </li>
+            <li class="footer-contacts-item">
+              <p class="footer-contacts-text">Email</p>
+              <a href="mailto:example@gmail.com" class="footer-contacts-link"
+                >example@gmail.com</a
+              >
+            </li>
+            <li class="footer-contacts-item">
+              <p class="footer-contacts-text">
+                Телефон для дзвінків із-за кордону
+              </p>
+              <a href="tel:044 000 00 00" class="footer-contacts-link"
+                >044 000 00 00</a
+              >
+            </li>
+            <li class="footer-contacts-item">
+              <p class="footer-contacts-text">Співпраця</p>
+              <a href="mailto:example@gmail.com" class="footer-contacts-link"
+                >example@gmail.com</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 
   <script>
