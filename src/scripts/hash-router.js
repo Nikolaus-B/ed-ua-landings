@@ -33,7 +33,7 @@ const locationHandler = async () => {
   const route = routes[location] || routes["404"];
 
   const html = await fetch(route.template).then((response) => response.text());
-
+  console.log(html);
   document.getElementById("content").innerHTML = html;
 
   document.title = route.title;
