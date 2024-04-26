@@ -189,7 +189,7 @@
   <script>
     function loadPage(page) {
       const contentDiv = document.getElementById("content");
-      fetch(`/src/pages/${page}.html`)
+      fetch(`/${page}.html`)
         .then((response) => response.text())
         .then((html) => {
           contentDiv.innerHTML = html;
