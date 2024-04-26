@@ -189,14 +189,16 @@
   <script>
     function loadPage(page) {
       const contentDiv = document.getElementById("content");
-      fetch(`/${page}.html`)
-        .then((response) => response.text())
-        .then((html) => {
-          contentDiv.innerHTML = html;
-        })
-        .catch((error) => {
-          console.error("Error loading page:", error);
-        });
+      const xhr = new XMLHttpRequest();
+      xhr.open("GET", `src/pages/${page}.html`, true);
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+          contentDiv.innerHTML = xhr.responseText;
+        } else {
+          contentDiv.innerHTML = "Page not found.";
+        }
+      };
+      xhr.send();
     }
 
     function handleUrlChange() {
