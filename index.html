@@ -195,16 +195,17 @@
     };
 
     const routes = {
-      404: "/pages/not-found.html",
-      "/teacher": "/pages/teacher.html",
-      "/student": "/pages/student.html",
-      "/specialist": "/pages/specialist.html",
+      404: "/src/pages/not-found.html",
+      "/teacher": "/src/pages/teacher.html",
+      "/student": "/src/pages/student.html",
+      "/specialist": "/src/pages/specialist.html",
     };
 
     const handleLocation = async () => {
       const path = window.location.pathname;
       const route = routes[path] || routes[404];
       const html = await fetch(route).then((data) => data.text());
+      console.log(html);
       document.getElementById("content").innerHTML = html;
     };
 
