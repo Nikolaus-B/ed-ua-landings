@@ -186,32 +186,5 @@
     </footer>
   </body>
 
-  <script>
-    function loadPage(page) {
-      const contentDiv = document.getElementById("content");
-      fetch(`${page}.html`)
-        .then((response) => response.text())
-        .then((html) => {
-          contentDiv.innerHTML = html;
-        })
-        .catch((error) => {
-          console.error("Error loading page:", error);
-        });
-    }
-
-    function handleUrlChange() {
-      const path = window.location.pathname;
-      if (path === "/teacher") {
-        loadPage("teacher");
-      } else if (path === "/student") {
-        loadPage("student");
-      } else {
-        loadPage("user");
-      }
-    }
-
-    handleUrlChange();
-
-    window.addEventListener("popstate", handleUrlChange);
-  </script>
+  <script src="/src/scripts/hash-router.js"></script>
 </html>
