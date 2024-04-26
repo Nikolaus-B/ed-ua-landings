@@ -1,3 +1,173 @@
-.teacher {
-  margin: auto;
+.teacher-hero {
+  padding-bottom: 0px;
+}
+
+.teacher-hero-container {
+  display: flex;
+}
+
+.teacher-hero-main-info-wrap {
+  width: 624px;
+  margin: 141px 84px;
+}
+
+.teacher-hero-main-info-title {
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90px;
+
+  margin-bottom: 32px;
+
+  text-align: center;
+
+  color: var(--green-color-300);
+}
+
+.teacher-hero-main-info-text {
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.teacher-hero-main-info-text:nth-child(2) {
+  margin-bottom: 24px;
+}
+
+.teacher-hero-main-info-btn {
+  display: flex;
+  width: 560px;
+  padding: 16px 24px;
+  justify-content: center;
+  align-items: center;
+
+  margin: 100px auto 0 auto;
+
+  border-radius: 8px;
+  border: 1px solid var(--green-color-300);
+  background: var(--yellow-color-300);
+}
+
+.teacher-hero-main-info-img {
+  width: 648px;
+  height: 650px;
+}
+
+.teacher-our-mission-container {
+  background-color: var(--green-color-300);
+  padding: 84px;
+}
+
+.teacher-hero-our-mission-title {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 42px; /* 42px */
+
+  margin-bottom: 24px;
+
+  color: var(--white-color);
+}
+
+.teacher-hero-our-mission-text {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 60px;
+
+  color: var(--white-color);
+}
+
+.teacher-about-section-container {
+  display: flex;
+  gap: 24px;
+}
+
+.teacher-about-element {
+  box-sizing: border-box;
+  width: 408px;
+  padding: 40px 48px;
+
+  border-radius: 8px;
+  border: 1px solid var(--green-color-300);
+}
+
+.teacher-section-about-text {
+  width: 312px;
+
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.teacher-join-container {
+  background: var(--yellow-color-200);
+  padding: 40px 84px;
+}
+
+.teacher-join-text {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.teacher-oportunities-container {
+  display: flex;
+  padding: 24px 0;
+
+  border-top: 1px solid var(--green-color-300);
+  border-bottom: 1px solid var(--green-color-300);
+}
+
+.teacher-oportunities-element {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  gap: 24px;
+
+  width: 300px;
+  height: 180px;
+  padding: 24px;
+}
+
+.teacher-oportunities-text {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+
+  text-align: center;
+}
+
+.teacher-how-it-works-container {
+  display: flex;
+}
+
+.teacher-how-it-works-line {
+  width: 100px;
+  height: 1px;
+
+  margin-top: 50px;
+  background: var(--black-color);
+}
+
+.teacher-how-it-works-element {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 245px;
+}
+
+.teacher-how-it-works-element-title {
+  margin: 28px 0 12px 0;
+
+  font-size: 20px;
+  line-height: 30px;
 }
