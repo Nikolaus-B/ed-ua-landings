@@ -187,32 +187,31 @@
   </body>
 
   <script>
-    const route = (event) => {
-      event = event || window.event;
-      event.preventDefault();
-      window.history.pushState({}, "", event.target.href);
-      handleLocation();
-    };
+    function loadPage(page) {
+      const contentDiv = document.getElementById("content");
+      fetch(`/src/pages/${page}.html`)
+        .then((response) => response.text())
+        .then((html) => {
+          contentDiv.innerHTML = html;
+        })
+        .catch((error) => {
+          console.error("Error loading page:", error);
+        });
+    }
 
-    const routes = {
-      404: "/src/pages/not-found.html",
-      "/teacher": "/src/pages/teacher.html",
-      "/student": "/src/pages/student.html",
-      "/specialist": "/src/pages/specialist.html",
-    };
-
-    const handleLocation = async () => {
+    function handleUrlChange() {
       const path = window.location.pathname;
-      const route = routes[path] || routes[404];
-      console.log(route);
-      const html = await fetch(route).then((data) => data.text());
-      // console.log(html);
-      document.getElementById("content").innerHTML = html;
-    };
+      if (path === "/teacher") {
+        loadPage("teacher");
+      } else if (path === "/student") {
+        loadPage("student");
+      } else {
+        loadPage("user");
+      }
+    }
 
-    window.onpopstate = handleLocation;
-    window.route = route;
+    handleUrlChange();
 
-    handleLocation();
+    window.addEventListener("popstate", handleUrlChange);
   </script>
 </html>
