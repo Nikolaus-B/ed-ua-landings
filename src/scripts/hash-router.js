@@ -7,17 +7,17 @@ const routes = {
     description: "Page not found",
   },
   "/teacher": {
-    template: "/src/pages/teacher.html",
+    template: "/teacher.html",
     title: "Teacher | " + pageTitle,
     description: "This is the home page",
   },
   "/specialist": {
-    template: "/src/pages/specialist.html",
+    template: "specialist.html",
     title: "Specialist | " + pageTitle,
     description: "This is the about page",
   },
   "/student": {
-    template: "/src/pages/student.html",
+    template: "/student.html",
     title: "Student | " + pageTitle,
     description: "This is the contact page",
   },
