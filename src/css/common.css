@@ -36,6 +36,10 @@ body {
   margin: 0;
 }
 
+div {
+  box-sizing: border-box;
+}
+
 .title {
   font-size: 28px;
   font-style: normal;
@@ -45,6 +49,16 @@ body {
   margin-bottom: 80px;
 
   color: var(--green-color-300);
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 8px;
+  border: 1px solid var(--green-color-300);
+  background: var(--yellow-color-300);
 }
 
 .container {
