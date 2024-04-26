@@ -189,29 +189,33 @@
   <script>
     function loadPage(page) {
       const contentDiv = document.getElementById("content");
-      fetch(`/src/pages/${page}.html`)
-        .then((response) => response.text())
-        .then((html) => {
-          contentDiv.innerHTML = html;
-        })
-        .catch((error) => {
-          console.error("Error loading page:", error);
-        });
+      const xhr = new XMLHttpRequest();
+      xhr.open("GET", `src/pages/${page}.html`, true);
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+          contentDiv.innerHTML = xhr.responseText;
+        } else {
+          contentDiv.innerHTML = "Page not found.";
+        }
+      };
+      xhr.send();
     }
 
     function handleUrlChange() {
-      const path = window.location.pathname;
-      if (path === "/teacher") {
+      const hash = window.location.hash;
+      if (hash === "#teacher") {
         loadPage("teacher");
-      } else if (path === "/student") {
+      } else if (hash === "#student") {
         loadPage("student");
+      } else if (hash === "#specialist") {
+        loadPage("specialist");
       } else {
-        loadPage("user");
+        loadPage("not-found");
       }
     }
 
     handleUrlChange();
 
-    window.addEventListener("popstate", handleUrlChange);
+    window.addEventListener("hashchange", handleUrlChange);
   </script>
 </html>
