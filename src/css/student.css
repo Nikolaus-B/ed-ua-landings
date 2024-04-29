@@ -1,3 +1,224 @@
-.student {
-  margin: auto;
+/** hero **/
+
+.student-hero-section {
+  display: flex;
+  gap: 84px;
+  padding-left: 84px;
+  padding-bottom: 0px;
+}
+
+.student-hero-container {
+  width: 624px;
+  margin-top: 120px;
+}
+
+.student-hero-title {
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+
+  margin-bottom: 32px;
+
+  text-align: center;
+
+  color: var(--green-color-300);
+}
+
+.student-hero-text {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+
+  text-align: center;
+}
+
+.student-hero-text:nth-child(2) {
+  margin-bottom: 24px;
+}
+
+.student-hero-btn {
+  width: 560px;
+  height: 62px;
+  margin: 100px auto 0 auto;
+  font-size: 20px;
+  line-height: 150%;
+}
+
+/** our mission **/
+
+.student-our-mission-section {
+  position: relative;
+  top: -57px;
+}
+
+.student-our-mission-container {
+  padding: 84px;
+  background-color: var(--green-color-300);
+}
+
+.student-our-mission-title {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+
+  margin-bottom: 24px;
+
+  color: var(--white-color);
+}
+
+.student-our-mission-subtitle {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+
+  color: var(--white-color);
+}
+
+/** about info **/
+
+.student-about-info-container {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.student-about-info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  width: 624px;
+}
+
+.student-about-info-item {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  align-self: stretch;
+
+  padding: 40px 48px;
+
+  border-radius: 8px;
+  border: 1px solid var(--green-color-300);
+}
+
+.student-about-info-text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.student-about-images-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+
+  width: 624px;
+}
+
+.student-about-info-img {
+  width: 265px;
+  height: 268px;
+}
+
+/** join **/
+
+.student-join-container {
+  padding: 40px 84px;
+  background-color: var(--yellow-color-200);
+}
+
+.student-join-title {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+/** oportunities **/
+
+.student-oportunities-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+
+  padding: 24px 0 24px 0;
+
+  border-top: 1px solid var(--green-color-300);
+  border-bottom: 1px solid var(--green-color-300);
+}
+
+.student-oportunities-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+
+  width: 300px;
+  height: 217px;
+  padding-top: 24px;
+}
+
+.student-oportunities-text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 150%;
+
+  text-align: center;
+}
+
+/** how it works **/
+
+.student-how-it-works-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.student-how-it-works-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+
+  width: 245px;
+}
+
+.student-item-position {
+  position: relative;
+  top: 15px;
+}
+
+.student-how-it-works-line {
+  position: relative;
+  top: -80px;
+
+  width: 100px;
+  height: 1px;
+
+  background-color: #232c26;
+}
+
+.student-how-it-works-subtitle {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+
+  margin: 28px 0 12px 0;
+}
+
+.student-how-it-works-text {
+  font-size: 16px;
+
+  font-weight: 400;
+  line-height: 150%;
+
+  text-align: center;
 }

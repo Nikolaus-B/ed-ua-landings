@@ -18,12 +18,397 @@
     <link rel="stylesheet" href="./src/css/styles.css" />
   </head>
   <body>
-    <load src="./src/partials/header.html" />
+    <header class="header">
+      <div class="header-img-container">
+        <img class="header-img-flag" src="./flag-left.png" alt="flag-left" />
+        <img class="header-img-emblem" src="./emblem.png" alt="emblem" />
+        <img class="header-img-flag" src="./flag-right.png" alt="flag-right" />
+      </div>
+      <nav class="header-nav">
+        <a
+          href="https://it-certification.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg class="header-logo" width="49" height="60">
+            <use href="./sprite.svg#logo"></use>
+          </svg>
+        </a>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="" class="nav-link">Головна</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Про платформу</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Можливості</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Як працює</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Що отримаєте</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Відгуки</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
     <main id="content">
-      <load src="./src/partials/student.html" />
-    </main>
+      <section class="student-hero-section container-no-paggings">
+        <div class="student-hero-container">
+          <h2 class="student-hero-title">Education UA</h2>
+          <p class="student-hero-text">
+            Безліч освітніх можливостей у вашому електронному кабінеті
+          </p>
+          <p class="student-hero-text">
+            Створюйте портфоліо та взаємодійте з IT-спеціалістами
+          </p>
+          <button class="student-hero-btn btn">Зареєструватися</button>
+        </div>
+        <img src="./student/student-hero.png" alt="girl with books" />
+      </section>
+      <section class="student-our-mission-section container-no-paggings">
+        <div class="student-our-mission-container">
+          <h3 class="student-our-mission-title">Наша місія</h3>
+          <h4 class="student-our-mission-subtitle">
+            Ми сприяємо освіті, надаючи студентам найкращі ІТ ресурси!
+          </h4>
+        </div>
+      </section>
+      <section class="container">
+        <div class="student-about-title-container">
+          <h3 class="title">Про платформу</h3>
+        </div>
+        <div class="student-about-info-container">
+          <ul class="student-about-info-list">
+            <li class="student-about-info-item">
+              <p class="student-about-info-text">
+                Education UA - це інноваційний інструмент, що забезпечує
+                повністю інтерактивне середовище, в якому співпрацюють
+                викладачі, IT спеціалісти та студенти
+              </p>
+            </li>
+            <li class="student-about-info-item">
+              <p class="student-about-info-text">
+                Завдяки платформі студенти зможуть здобувати якісну освіту у
+                сертифікованих викладачів, а також залишати зворотний зв'язок
+                щодо якості навчання
+              </p>
+            </li>
+            <li class="student-about-info-item">
+              <p class="student-about-info-text">
+                Наш сервіс допоможе вам створити своє портфоліо. Ви зможете
+                брати участь у відкритих лекціях та отримувати цінні знання від
+                IT спеціалістів
+              </p>
+            </li>
+          </ul>
 
-    <load src="./src/partials/footer.html" />
+          <div class="student-about-images-container">
+            <img
+              src="./student/yellow-section.png"
+              alt="woman with book yellow bg"
+              class="student-about-info-img"
+            />
+            <img
+              src="./student/red-section.png"
+              alt="man with book red bg"
+              class="student-about-info-img"
+            />
+            <img
+              src="./student/green-section.png"
+              alt="man with book green bg"
+              class="student-about-info-img"
+            />
+            <img
+              src="./student/blue-section.png"
+              alt="woman with book blue bg"
+              class="student-about-info-img"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="student-join-section container-no-paggings">
+        <div class="student-join-container">
+          <h3 class="student-join-title">
+            Приєднуйтесь до Education UA!<br />
+            Ви знайдете цікаві пропозиції, отримаєте доступ до унікальних
+            можливостей та <br />
+            співпраці з IT спеціалістами
+          </h3>
+        </div>
+      </section>
+      <section class="container">
+        <h3 class="title">
+          Які можливості дає студентам реєстрація на платформі
+        </h3>
+        <ul class="student-oportunities-list">
+          <li class="student-oportunities-item">
+            <svg class="student-oportunities-icon" width="56" height="56">
+              <use href="./sprite.svg#het"></use>
+            </svg>
+            <p class="student-oportunities-text">
+              Отримувати інформацію про курси, що діють та <br />
+              приймати в них участь
+            </p>
+          </li>
+          <li class="student-oportunities-item">
+            <svg class="student-oportunities-icon" width="56" height="56">
+              <use href="./sprite.svg#teachers"></use>
+            </svg>
+            <p class="student-oportunities-text">
+              Оцінювати курси та залишати зворотний зв'язок щодо <br />
+              якості навчання
+            </p>
+          </li>
+          <li class="student-oportunities-item">
+            <svg class="student-oportunities-icon" width="56" height="56">
+              <use href="./sprite.svg#board"></use>
+            </svg>
+            <p class="student-oportunities-text">
+              Вести портфоліо <br />
+              для майбутнього працевлаштування
+            </p>
+          </li>
+          <li class="student-oportunities-item">
+            <svg class="student-oportunities-icon" width="56" height="56">
+              <use href="./sprite.svg#men"></use>
+            </svg>
+            <p class="student-oportunities-text">
+              Перспектива <br />
+              працевлаштування до <br />
+              ведучих IT компаній
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="student-how-it-works-section container">
+        <h3 class="title">Як це працює</h3>
+        <div class="student-how-it-works-container">
+          <div class="student-how-it-works-item">
+            <svg class="student-how-it-works-icon" width="100" height="100">
+              <use href="./sprite.svg#computer-yellow-1"></use>
+            </svg>
+            <h4 class="student-how-it-works-subtitle">Реєстрація</h4>
+            <p class="student-how-it-works-text">
+              Залучення до системи <br />
+              відбувається через перелік <br />
+              студентів, що вже існує,<br />
+              необхідно тільки ввести <br />
+              свої дані
+            </p>
+          </div>
+          <div class="student-how-it-works-line"></div>
+          <div class="student-how-it-works-item">
+            <svg class="student-how-it-works-icon" width="100" height="100">
+              <use href="./sprite.svg#computer-blue"></use>
+            </svg>
+            <h4 class="student-how-it-works-subtitle">Валідаційні заходи</h4>
+            <p class="student-how-it-works-text">
+              В електронному кабінеті буде розміщена інформація щодо
+              валідаційних заходів, з формою зворотного зв’язку
+            </p>
+          </div>
+          <div class="student-how-it-works-line"></div>
+          <div class="student-how-it-works-item student-item-position">
+            <svg class="student-how-it-works-icon" width="100" height="100">
+              <use href="./sprite.svg#document-red"></use>
+            </svg>
+            <h4 class="student-how-it-works-subtitle">Навчання</h4>
+            <p class="student-how-it-works-text">
+              Ви долучитесь до спільноти студентів, викладачів та IT
+              спеціалістів у вашій галузі та візьмете участь у <br />
+              покращенні навчання
+            </p>
+          </div>
+          <div class="student-how-it-works-line"></div>
+          <div class="student-how-it-works-item">
+            <svg class="student-how-it-works-icon" width="100" height="100">
+              <use href="./sprite.svg#men-medal-green"></use>
+            </svg>
+            <h4 class="student-how-it-works-subtitle">Майбутня ка’єра</h4>
+            <p class="student-how-it-works-text">
+              Ведіть своє портфоліо та демонструйте свої досягнення потенційним
+              роботодавцям
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="student-you-will-recive-section container">
+        <h3 class="title">Ви отримаєте</h3>
+        <div class="student-you-will-recive-container">
+          <ul class="student-you-will-recive-list">
+            <li class="student-you-will-recive-item">
+              <p class="student-you-will-recive-text">
+                Навчання за сучасними методиками
+              </p>
+              <img
+                src="./student/woman-with-diploma.png"
+                alt="woman with diploma"
+                class="student-you-will-recive-img"
+              />
+            </li>
+            <li class="student-you-will-recive-item">
+              <p class="student-you-will-recive-text">Заповнене портфоліо</p>
+              <img
+                src="./student/students-diplomas.png"
+                alt="diplomas"
+                class="student-you-will-recive-img"
+              />
+            </li>
+            <li class="student-you-will-recive-item">
+              <p class="student-you-will-recive-text">
+                Можливість працевлаштування
+              </p>
+              <img
+                src="./student/handshake.png"
+                alt="handshake"
+                class="student-you-will-recive-img"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="container-no-paggings">
+        <div>
+          <img src="" alt="" class="student-join-us-img" />
+          <h3 class="student-join-us-title">Приєднуйтесь до нас!</h3>
+          <h4 class="student-join-us-subtitle">Станьте частиною інновацій!</h4>
+          <button class="student-join-us-btn btn">Зареєструватися</button>
+        </div>
+        <img src="./student/office-meeting.png" alt="office" />
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-container">
+        <a
+          href="https://it-certification.vercel.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg class="footer-logo" width="49" height="90">
+            <use href="./sprite.svg#logo"></use>
+          </svg>
+        </a>
+        <!-- <div class="footer-link-container"> -->
+        <ul class="footer-link-list">
+          <li class="footer-link-item">
+            <a href="" class="footer-link">
+              <img src="./instagram-icon.png" alt="instagram icon" />
+            </a>
+          </li>
+          <li class="footer-link-item">
+            <a href="" class="footer-link">
+              <svg class="footer-social" width="32" height="32">
+                <use href="./sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-link-item">
+            <a href="" class="footer-link">
+              <svg class="footer-social" width="32" height="32">
+                <use href="./sprite.svg#viber"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-link-item">
+            <a href="" class="footer-link">
+              <svg class="footer-social" width="32" height="32">
+                <use href="./sprite.svg#telegram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-link-item">
+            <a href="" class="footer-link">
+              <svg class="footer-social" width="32" height="32">
+                <use href="./sprite.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-link-item">
+            <a href="" class="footer-link">
+              <svg class="footer-social" width="32" height="32">
+                <use href="./sprite.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <!-- </div> -->
+        <div class="footer-info-wrap">
+          <div class="footer-main-info-wrap">
+            <div class="footer-main-info-container">
+              <p class="footer-text">Офіційний веб-сайт</p>
+              <a
+                href="https://it-certification.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer-main-info-link"
+                >Education UA
+              </a>
+            </div>
+            <div class="footer-main-info-container">
+              <p class="footer-text">Права на всі матеріали належать</p>
+              <a
+                href="https://it-certification.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer-main-info-link"
+                >Education UA
+              </a>
+            </div>
+            <div class="footer-main-info-container">
+              <svg class="header-logo" width="24" height="24">
+                <use href="./sprite.svg#copyright"></use>
+              </svg>
+              <a
+                href="https://it-certification.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer-main-info-link"
+                >Education UA
+              </a>
+              <p>2024</p>
+              <p>Всі права захищені</p>
+            </div>
+          </div>
+
+          <ul class="footer-contacts-list">
+            <li class="footer-contacts-item">
+              <p class="footer-contacts-text">Гаряча лінія</p>
+              <a href="tel:0 (800) 000 000" class="footer-contacts-link"
+                >0 (800) 000 000</a
+              >
+            </li>
+            <li class="footer-contacts-item">
+              <p class="footer-contacts-text">Email</p>
+              <a href="mailto:example@gmail.com" class="footer-contacts-link"
+                >example@gmail.com</a
+              >
+            </li>
+            <li class="footer-contacts-item">
+              <p class="footer-contacts-text">
+                Телефон для дзвінків із-за кордону
+              </p>
+              <a href="tel:044 000 00 00" class="footer-contacts-link"
+                >044 000 00 00</a
+              >
+            </li>
+            <li class="footer-contacts-item">
+              <p class="footer-contacts-text">Співпраця</p>
+              <a href="mailto:example@gmail.com" class="footer-contacts-link"
+                >example@gmail.com</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
